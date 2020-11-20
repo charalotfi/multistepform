@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
-
+import Hoobies from './Hoobies';
+import Show from './Show';
+import Form from './Form';
 
 class MasterForm extends React.Component{
     constructor(props){
@@ -9,7 +11,7 @@ class MasterForm extends React.Component{
     render(){
         return(
             <div>
-               <h1>hello from master Form</h1>
+                <Form />
               </div>
         )
         
