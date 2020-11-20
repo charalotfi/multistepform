@@ -51,7 +51,7 @@ class Form extends React.Component{
                         
                        
                         <div>
-                             <h1>hello from Form Component</h1>
+                             <h1>Form </h1>
                         <label>Nom </label>
                         <input
                         className="nom"

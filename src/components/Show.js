@@ -18,7 +18,7 @@ class Show extends React.Component{
         if(this.state.precedantH === false){
             return(
                 <div>
-                <h1>helow from Show Component </h1>
+                <h1> Show </h1>
                  <p>voila votre saisie :</p>
                             <p>Nom :{this.props.informationForm.nom}</p>
                              <p>Prenom :{this.props.informationForm.prenom}</p>

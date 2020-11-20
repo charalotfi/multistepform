@@ -33,7 +33,7 @@ render(){
     if(this.state.nextS === false ){
         return(
             <div>
-            <h1>hellow from Hoobies component</h1>
+            <h1>Hoobies</h1>
                         <label>Sport</label>
                                     <input
                                     className="sport"
@@ -46,9 +46,9 @@ render(){
                                     type="checkbox"
                                     />
     
-                        <label>Cooding</label>
+                        <label>Coding</label>
                                     <input
-                                    className="cooding"
+                                    className="coding"
                                     type="checkbox"
                                     />
     
