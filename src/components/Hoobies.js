@@ -12,7 +12,7 @@ class Hoobies extends React.Component{
             prenom:this.props.prenomForm,
             telephone:this.props.telephoneForm,
         },
-        hoobies:[],
+        hobbies:[],
        
 
       }

@@ -1,20 +1,7 @@
-import React, {Component} from 'react';
-import Hoobies from './Hoobies';
-import Show from './Show';
-import Form from './Form';
+import React, { Component } from "react";
+import Form from "./Form";
 
-class MasterForm extends React.Component{
-    constructor(props){
-        super(props);
-         }
-   
-    render(){
-        return(
-            <div>
-                <Form />
-              </div>
-        )
-        
-    }
+function MasterForm() {
+  return <Form />;
 }
 export default MasterForm;

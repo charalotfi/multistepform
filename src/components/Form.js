@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import Hoobies from './Hoobies';
-import Show from './Show';
+import { Button } from '@material-ui/core';
+import Input from '@material-ui/core/Input';
+import '../assets/css/Form.css';
 
 class Form extends React.Component{
     constructor(props){
@@ -49,37 +51,43 @@ class Form extends React.Component{
                    
                         {this.state.next === false ? 
                         
-                       
+                                                    
                         <div>
-                             <h1>Form </h1>
-                        <label>Nom </label>
-                        <input
-                        className="nom"
-                        type="text"
-                        onChange={this.handleClickNom}
-                        value={this.state.nomForm}
-                        />
-    
-                        <label>Prénom </label>
-                        <input
-                        className="prenom"
-                        type="text"
-                        onChange={this.handleClickPrenom}
-                        value={this.state.prenomForm}
-                        />
-    
-                        <label>Téléphone </label>
-                        <input
-                        className="telephone"
-                        type="text"
-                        onChange={this.handleClickTelephone}
-                        value={this.state.telephoneForm}
-                        />
 
+                              <form className = "noValidate" autoComplete="off">
+                      
+                                <Input placeholder="Nom" inputProps={{ 'aria-label': 'description' }}
+                                 className="nom"
+                                 type="text"
+                                 onChange={this.handleClickNom}
+                                 value={this.state.nomForm}
+                                  />
+                                  <br/>
+                              
+                                <Input placeholder="Prénom" inputProps={{ 'aria-label': 'description' }} 
+                                className="form-control prenom"
+                                type="text"
+                                onChange={this.handleClickPrenom}
+                                value={this.state.prenomForm}
+                                />
+                                <br/>
+                               
+                                <Input placeholder="telephone" inputProps={{ 'aria-label': 'description' }} 
+                                className="telephone"
+                                type="text"
+                                onChange={this.handleClickTelephone}
+                                value={this.state.telephoneForm}
+                                />
+                                <br/>
+                                
+                                
+                                
+                              </form>
 
-
-
-                             <button className="suivant" onClick={this.handleClickNextH}>Next</button>
+                             
+                             <Button className = "suivant" variant="contained" color="primary"  onClick={this.handleClickNextH}>Next  </Button>
+                          
+                                  
                              
                              
                         </div>
