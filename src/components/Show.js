@@ -21,8 +21,13 @@ class Show extends React.Component{
                 <h1> Show </h1>
                  <p>voila votre saisie :</p>
                             <p>Nom :{this.props.informationForm.nom}</p>
-                             <p>Prenom :{this.props.informationForm.prenom}</p>
+                            <p>Prenom :{this.props.informationForm.prenom}</p>
                             <p>Téléphone :{this.props.informationForm.telephone}</p> 
+                            <p>Hobbies :</p>
+                           {this.props.hobbies.map((x,index)=> {
+                               return(<p key={index}>{x}</p>)
+                               })}
+                                                                 
                             <button className="PrecedantH" onClick={this.handleClickPrecedantH}>précédant</button> 
             </div>
             )
