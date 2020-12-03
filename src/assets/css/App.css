@@ -1,11 +1,5 @@
 .App{
-    width: 40%;
-    height: 40%;
+    width: 100vh;
+    height: 100vh;
     background-color: whitesmoke;
-    margin-left: 20%;
-    margin-top: 5%;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
 }

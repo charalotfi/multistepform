@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
 import Hoobies from './Hoobies';
-import { Button } from '@material-ui/core';
-import Input from '@material-ui/core/Input';
 import '../assets/css/Form.css';
 
 class Form extends React.Component{
@@ -54,9 +52,9 @@ class Form extends React.Component{
                                                     
                         <div>
 
-                              <form className = "noValidate" autoComplete="off">
+                              <form >
                       
-                                <Input placeholder="Nom" inputProps={{ 'aria-label': 'description' }}
+                                <input
                                  className="nom"
                                  type="text"
                                  onChange={this.handleClickNom}
@@ -64,15 +62,15 @@ class Form extends React.Component{
                                   />
                                   <br/>
                               
-                                <Input placeholder="Prénom" inputProps={{ 'aria-label': 'description' }} 
-                                className="form-control prenom"
+                                <input
+                                className="prenom"
                                 type="text"
                                 onChange={this.handleClickPrenom}
                                 value={this.state.prenomForm}
                                 />
                                 <br/>
                                
-                                <Input placeholder="telephone" inputProps={{ 'aria-label': 'description' }} 
+                                <input
                                 className="telephone"
                                 type="text"
                                 onChange={this.handleClickTelephone}
@@ -85,7 +83,7 @@ class Form extends React.Component{
                               </form>
 
                              
-                             <Button className = "suivant" variant="contained" color="primary"  onClick={this.handleClickNextH}>Next  </Button>
+                             <button className = "suivant" onClick={this.handleClickNextH}>Next  </button>
                           
                                   
                              
