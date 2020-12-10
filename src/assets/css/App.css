@@ -1,5 +1,30 @@
+html,body{
+    height: 100%;
+}
+#root{
+    height: 100%;
+display: flex;
+justify-content: center;
+align-content: center;
+align-items: center;
+background: radial-gradient(circle, rgba(149,240,239,1) 0%, rgba(95,149,82,1) 100%);
+}
 .App{
-    width: 100vh;
-    height: 100vh;
-    background-color: whitesmoke;
+    padding: 3%;
+
+    box-shadow: 2px aliceblue;
+    width: 76%;
+    max-width: 700px;
+    height: 58%;
+    background-color: #fff9;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    overflow: auto;
+    box-shadow: -1px 0px 17px 0px rgba(22, 0, 2, 0);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }

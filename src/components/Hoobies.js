@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Show from "./Show";
-import Form from "./Form";
+import Formulaire from "./Formulaire";
+import {Button,Form,Container} from "react-bootstrap";
 class Hoobies extends React.Component {
   constructor(props) {
     super(props);
@@ -48,45 +49,49 @@ class Hoobies extends React.Component {
     if (this.state.precedant === false) {
       if (this.state.nextS === false) {
         return (
-          <div>
+          <Container fluid>
             <h1>Hobbies</h1>
-            <label>Sport</label>
-            <input
-              className="sport"
-              type="checkbox"
-              value="sport"
-              onChange={this.handleClickCheckbox}
-            />
+            <Form>
 
-            <label>Sleeping</label>
-            <input
-              className="sleeping"
-              type="checkbox"
-              value="sleeping"
-              onChange={this.handleClickCheckbox}
-            />
+            <Form.Group>
+            <Form.Check type="checkbox" 
+            value="sport"
+            onChange={this.handleClickCheckbox}
+            label="Sport" />
+            </Form.Group>
+            
 
-            <label>Coding</label>
-            <input
-              className="coding"
-              type="checkbox"
-              value="coding"
-              onChange={this.handleClickCheckbox}
-            />
+            <Form.Group>
+            <Form.Check type="checkbox" 
+            value="sleeping"
+            onChange={this.handleClickCheckbox}
+            label="Sleeping" />
+            </Form.Group>
 
-            <button className="PrecedantF" onClick={this.handleClickPrecedantF}>
-              précédant
-            </button>
-            <button className="nextS" onClick={this.handleClickNextS}>
-              Next
-            </button>
-          </div>
+            <Form.Group>
+            <Form.Check type="checkbox" 
+            value="sport"
+            onChange={this.handleClickCheckbox}
+            label="Coding" />
+            </Form.Group>
+
+
+            <Button  variant="secondary" className="PrecedantF" onClick={this.handleClickPrecedantF} type="submit">
+            preceding
+            </Button>
+                
+            <Button  variant="success" className="nextS" onClick={this.handleClickNextS} type="submit">
+                Next
+            </Button>
+          
+            </Form>
+</Container>
         );
       } else {
         return <Show {...this.state} />;
       }
     } else {
-      return <Form />;
+      return <Formulaire />;
     }
   }
 }

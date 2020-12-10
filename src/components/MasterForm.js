@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import Form from "./Form";
+import Formulaire from "./Formulaire";
 
 function MasterForm() {
-  return <Form />;
+  return <Formulaire />;
 }
 export default MasterForm;

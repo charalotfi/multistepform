@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Hoobies from './Hoobies';
+import {Button,Form,Container} from "react-bootstrap";
 
 class Show extends React.Component{
     constructor(props){
@@ -27,8 +28,8 @@ class Show extends React.Component{
                            {this.props.hobbies.map((x,index)=> {
                                return(<p key={index}>{x}</p>)
                                })}
-                                                                 
-                            <button className="PrecedantH" onClick={this.handleClickPrecedantH}>précédant</button> 
+                             <Button  variant="secondary" className="PrecedantH" onClick={this.handleClickPrecedantH}type="submit"> preceding </Button>                                      
+                            
             </div>
             )
         }else{
