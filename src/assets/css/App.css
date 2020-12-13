@@ -11,7 +11,6 @@ background: radial-gradient(circle, rgba(149,240,239,1) 0%, rgba(95,149,82,1) 10
 }
 .App{
     padding: 3%;
-
     box-shadow: 2px aliceblue;
     width: 76%;
     max-width: 700px;
