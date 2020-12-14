@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import Hoobies from './Hoobies';
+import Hobbies from './Hobbies';
+import '../assets/css/Show.css';
 import {Button,Form,Container} from "react-bootstrap";
 
 class Show extends React.Component{
@@ -19,21 +20,29 @@ class Show extends React.Component{
         if(this.state.precedantH === false){
             return(
                 <div>
-                <h1> Show </h1>
+                <p className="titleShow"> Show </p>
                  <p>voila votre saisie :</p>
-                            <p>Nom :{this.props.informationForm.nom}</p>
+                 <div className="containerShow">
+                 <div className="formInformation">
+                         <p>  Nom :{this.props.informationForm.nom}</p>
                             <p>Prenom :{this.props.informationForm.prenom}</p>
                             <p>Téléphone :{this.props.informationForm.telephone}</p> 
-                            <p>Hobbies :</p>
+                 </div>
+                           <div classNam="hobbiesSelected">
+                           <p>Hobbies :</p>
                            {this.props.hobbies.map((x,index)=> {
                                return(<p key={index}>{x}</p>)
                                })}
+                           </div>
+                 </div>
+                
+                           
                              <Button  variant="secondary" className="PrecedantH" onClick={this.handleClickPrecedantH}type="submit"> preceding </Button>                                      
                             
             </div>
             )
         }else{
-            return(<Hoobies {...this.props.informationForm} />)
+            return(<Hobbies {...this.props.informationForm} />)
         }
        
      

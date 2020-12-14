@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import Hoobies from "./Hoobies";
-import "../assets/css/Formulaire.css";
+import Hobbies from './Hobbies';
+import '../assets/css/Hobbies.css';
+import '../assets/css/Formulaire.css';
 import {Button,Form,Container} from "react-bootstrap";
 
 class Formulaire extends React.Component {
@@ -81,7 +82,7 @@ class Formulaire extends React.Component {
         </>
         
       ) : (
-        <Hoobies {...this.state} />
+        <Hobbies {...this.state} />
       )}
 
     </>

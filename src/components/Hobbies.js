@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import Show from "./Show";
 import Formulaire from "./Formulaire";
+import "../assets/css/Hobbies.css";
 import {Button,Form,Container} from "react-bootstrap";
-class Hoobies extends React.Component {
+class Hobbies extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -50,10 +51,10 @@ class Hoobies extends React.Component {
       if (this.state.nextS === false) {
         return (
           <Container fluid>
-            <h1>Hobbies</h1>
+            <p className="titleHobbies">Hobbies</p>
             <Form>
 
-            <Form.Group>
+            <Form.Group className="formgroupeClass">
             <Form.Check type="checkbox" 
             value="sport"
             onChange={this.handleClickCheckbox}
@@ -61,14 +62,14 @@ class Hoobies extends React.Component {
             </Form.Group>
             
 
-            <Form.Group>
+            <Form.Group  className="formgroupeClass">
             <Form.Check type="checkbox" 
             value="sleeping"
             onChange={this.handleClickCheckbox}
             label="Sleeping" />
             </Form.Group>
 
-            <Form.Group>
+            <Form.Group  className="formgroupeClass">
             <Form.Check type="checkbox" 
             value="sport"
             onChange={this.handleClickCheckbox}
@@ -95,4 +96,4 @@ class Hoobies extends React.Component {
     }
   }
 }
-export default Hoobies;
+export default Hobbies;

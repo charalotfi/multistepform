@@ -1,0 +1,11 @@
+.formInformation{ 
+    width: 50%;
+    padding: 20px;  
+}
+.containerShow{
+    display: flex;
+    width: 600px;
+}
+.titleShow{
+    margin-left: 40%;
+}
